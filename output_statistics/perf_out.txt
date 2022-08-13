@@ -1,0 +1,5 @@
+File opened
+CPU Utlization = 0.882883 
+Avg WTA =10.287473 
+Avg Waiting =73.000000 
+Std WTA =5.882865 

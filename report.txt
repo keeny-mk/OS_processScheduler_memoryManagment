@@ -1,0 +1,19 @@
+I) Data structures used:
+1- Priority queue: for HPF and SJF algorithms where the processes were sorted by their Priority and remaining time respectively
+2- Circular queue: for RR algorithm 
+3- Binary tree: for memory allocation 
+
+II) Algorithm Explanation:
+1- RR algorithm: the processes are sorted by their arrival time in a circular queue where each process is given a certain quantum of time and then sent to the rear of the queue until it has the turn or finishes
+2- HPF algorithm: the process with the highest priority is chosen to run where each time instant the algorithm checks if there is a new process with a higher priority to replace it with the running one and when a process finishes the algorithm automatically looks for the next highest priority
+3- SJF algorithm: The process with the shortest remaining of running is chosen to run and while running the algorithm if there are other processes in the queue to replace with the current process if they have shorter remaining time 
+4- Memory Allocation: The algorithm uses a linearized binary tree in which array indices, or containers as they are called in the code, are representative of different allocation sizes. The algorithm then works on finding the correct container for the size of the memory allocation request by first looking for a suitable container. If one isn't available a large container is split until a proper allocation size is found. In freeing a node looks at its sibling to see if its free. If the sibling is free the allocation spaces merge as the children are destroyed and only the parent remains. If the sibling is not free, the node is added to the free list as its own separate allocation space
+
+III) Assumptions:
+1- Processes are not sorted by their arrival time in the test case (we re-sort them when reading the file)
+2- The sum of the process' sizes shouldn't exceed the memory total size (1024) 
+
+IV) Workload Distribution:
+- Each group member worked on one of the three scheduling algorithms then we collaborated together to produce the memory allocation algorithm
+
+
